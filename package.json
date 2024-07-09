@@ -1,0 +1,26 @@
+{
+  "name": "project_first",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon api/index.js",
+    "dev": "node api/index.js",
+    "build": "npm install && npm install --prefix client1 && npm run build --prefix client1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@firebase/storage": "^0.12.1",
+    "bcryptjs": "^2.4.3",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.1.1",
+    "nodemon": "^3.0.3",
+    "socket.io": "^4.7.5"
+  }
+}
